@@ -18,10 +18,6 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
 
 // Restart the game
 GameManager.prototype.restart = function () {
-<<<<<<< HEAD
-  this.actuator.continue(true);
-  this.setup();
-=======
     this.stateHistory = [];
     this.actuator.continue();
     this.setup();
@@ -35,7 +31,6 @@ GameManager.prototype.serialize = function () {
         won: this.won,
         keepPlaying: this.keepPlaying
     };
->>>>>>> 89823a3679c846ba16447216ad3aa735c66f6486
 };
 
 // Keep playing after winning
@@ -53,13 +48,8 @@ GameManager.prototype.isGameTerminated = function () {
 };
 
 // Set up the game
-<<<<<<< HEAD
-GameManager.prototype.setup = function () {
-  this.grid        = new Grid(this.size, true);
-=======
 GameManager.prototype.setup = function () {
     this.grid = new Grid(this.size);
->>>>>>> 89823a3679c846ba16447216ad3aa735c66f6486
 
     this.score = 0;
     this.over = false;
@@ -202,16 +192,6 @@ GameManager.prototype.move = function (direction) {
         });
     });
 
-<<<<<<< HEAD
-  if (moved) {
-    this.addRandomTile();
-    if (Math.random() > 0.25) {
-      this.addRandomTile();
-    }
-    if (!this.movesAvailable()) {
-      this.over = true; // Game over!
-    }
-=======
     if (moved) {
         this.addRandomTile();
         if (Math.random() > 0.25) {
@@ -220,7 +200,6 @@ GameManager.prototype.move = function (direction) {
         if (!this.movesAvailable()) {
             this.over = true; // Game over!
         }
->>>>>>> 89823a3679c846ba16447216ad3aa735c66f6486
 
         this.actuate();
     }

@@ -23,7 +23,6 @@
       </div>
     </div>
     <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-    <p class="game-intro"><a href="http://baiqiang.github.io/2048/">More 2048</a></p>
 
     <div class="game-container">
       <div class="game-message">
@@ -31,9 +30,6 @@
         <div class="lower">
 	        <a class="keep-playing-button">Keep going</a>
           <a class="retry-button">Try again</a>
-        </div>
-        <div id="alipay">
-          <a href='http://me.alipay.com/qiyu'><img src='https://img.alipay.com/sys/personalprod/style/mc/btn-index.png' /></a>
         </div>
       </div>
 
@@ -79,11 +75,7 @@
     </div>
 
     <p class="game-explanation">
-<<<<<<< HEAD
-      <strong class="important">How to play:</strong> Use the your <strong>arraw keys</strong> to move the tiles. Use combined keys up and right to move up right. When two tiles with the same number touch, they <strong>merge into one!</strong>
-=======
       <strong class="important">How to play:</strong> Use the your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
->>>>>>> 89823a3679c846ba16447216ad3aa735c66f6486
     </p>
     <hr>
     <p>
@@ -91,19 +83,13 @@
     </p>
   </div>
 
-  <script src="http://baiqiang.github.io/2048/js/base.hexagon.min.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-3512083-5', 'baiqiang.github.io');
-  ga('send', 'pageview');
-
-  </script>
 </body>
 </html>
