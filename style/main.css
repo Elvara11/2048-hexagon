@@ -606,7 +606,10 @@ hr {
   }
   .container {
     width: 280px;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+>>>>>>> 89823a3679c846ba16447216ad3aa735c66f6486
     margin: 0 auto;
   }
   .score-container, .best-container {
@@ -844,4 +847,32 @@ hr {
   .game-message .lower {
     margin-top: 30px !important;
   }
+  .undo-button {
+    width: 42%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px;
+  }
+}
+
+.below-game {
+    display:block;
+    clear:both;
+    margin:5px;
+}
+
+.undo-button {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 30px;
+  line-height: 32px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  float: right; 
 }
