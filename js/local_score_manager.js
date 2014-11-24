@@ -46,3 +46,6 @@ LocalScoreManager.prototype.set = function (score) {
   this.storage.setItem(this.key, score);
 };
 
+LocalScoreManager.prototype.setGameState = function (gameState) {
+    this.storage.setItem(this.gameStateKey, JSON.stringify(gameState));
+};
